@@ -1,0 +1,121 @@
+@media (max-width: 415px){
+
+
+   .header{
+       min-width: 330px;
+   }
+
+   .header_nav{
+       min-width: 330px;
+   }
+   .header_logo{
+      left: 132px;
+   }
+   .header_logo_img{
+      width: 110px;
+   }
+
+   .header_titulo{
+      left: 29px;
+      top: 120px;
+      font-size: 27px;
+   }
+
+   .contenido_bloque{
+      left: 55px;
+      top: 50px;
+
+   }
+
+   .contenido_titulo{
+      top: 20px;
+      left: 83px;
+      font-size: 23px;
+   }
+
+/*/////////////////////////////////////////////////////////////
+interfaz Sede Principal*/
+.contenido_pri{
+   height: 1000px;
+}
+.header_tituloOP{
+   font-size: 15px;
+   width: 150px;
+}
+.headerOP_logo_img{
+   width: 90px;
+}
+.headerOP_menu_img{
+   width: 40px;
+   top: 30px;
+}
+.headerOP_menu{
+   top: 20px;
+}
+.div_subt h1{
+   font-size: 25px ;
+}
+
+.subt_figure_img{
+   width: 35px;
+}
+.contenido_pri_section ul{
+   top: 90px;
+   width: auto;
+   height: auto;
+   justify-content: center;
+}
+
+.contenido_pri_section li{
+   width: 80px;
+   height: 80px;
+}
+/*/////////////////////////////////////////////////////////////
+interfaz Laboratorio de sistemas*/
+
+.contenido_section_div h1{
+   font-size: 25px;
+   padding-left: 5px;
+}
+.contenido_section_div{
+   align-items: center;
+}
+.figure_img{
+   width: 40px;
+}
+
+.contenido{
+   height: 1400px;
+}
+
+.contenido_section{
+   text-align: center;
+}
+
+.contenido_programas{
+   top: 100px;
+   width: auto;
+   height: auto;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.contenido_ubicap{
+   width: 250px;
+}
+
+.caracteristicas{
+   width: 250px;
+   font-size: 13px;
+}
+
+.contenido_uc{
+   width: auto;
+   margin-left: 0px;
+}
+.contenido_programas_ul h3{
+   top: 3px;
+   left: -40px;
+   font-size: 15px;
+}
+}
