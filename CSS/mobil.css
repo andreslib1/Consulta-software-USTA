@@ -1,35 +1,24 @@
 @media (max-width: 415px){
 
-
-   .header{
-       min-width: 330px;
-   }
-
    .header_nav{
-       min-width: 330px;
-   }
-   .header_logo{
-      left: 132px;
+      flex-direction: column;
    }
    .header_logo_img{
       width: 110px;
    }
 
    .header_titulo{
-      left: 29px;
-      top: 120px;
       font-size: 27px;
    }
 
-   .contenido_bloque{
-      left: 55px;
-      top: 50px;
-
+   .contenido{
+      max-width: 320px;
    }
 
+   .contenido_bloque{
+      max-width: 320px;
+   }
    .contenido_titulo{
-      top: 20px;
-      left: 83px;
       font-size: 23px;
    }
 
@@ -84,16 +73,15 @@ interfaz Laboratorio de sistemas*/
    width: 40px;
 }
 
-.contenido{
-   height: 1400px;
-}
-
 .contenido_section{
    text-align: center;
 }
-
+.contenido_salas{
+   max-width: 410px;
+   height: 1610px;
+}
 .contenido_programas{
-   top: 100px;
+   top: 90px;
    width: auto;
    height: auto;
    justify-content: center;
@@ -118,4 +106,17 @@ interfaz Laboratorio de sistemas*/
    left: -40px;
    font-size: 15px;
 }
+}
+
+/*/////////////////////////////////////////////////////////////
+interfaz Laboratorio de consulta software*/
+.contenido_pri{
+   height: 2850px;
+}
+
+/*/////////////////////////////////////////////////////////////
+interfaz Laboratorio de cada software*/
+
+.contenido_soft{
+   height: 1500px;
 }
