@@ -96,7 +96,9 @@ interfaz Laboratorio de sistemas*/
    width: 250px;
    font-size: 13px;
 }
-
+.contenido_pri_s{
+   height: 1010px;
+}
 .contenido_uc{
    width: auto;
    margin-left: 0px;
