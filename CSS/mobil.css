@@ -11,12 +11,20 @@
       font-size: 27px;
    }
 
+   .main_inicio{
+      height:  700px;
+   }
+
    .contenido{
       max-width: 320px;
    }
 
    .contenido_bloque{
       max-width: 320px;
+   }
+
+   .contenido_bloque_s{
+      box-shadow: 3px 12px 25px 3px rgba(0, 0, 0, 0.6);
    }
    .contenido_titulo{
       font-size: 23px;
@@ -113,12 +121,58 @@ interfaz Laboratorio de sistemas*/
 /*/////////////////////////////////////////////////////////////
 interfaz Laboratorio de consulta software*/
 .contenido_pri{
-   height: 2850px;
+   height: 2950px;
+}
+
+.div_subt{
+    height: 50px;
+}
+
+.ul_software{
+   margin-top: 10px;
+}
+
+.search_table{
+   width: 300px;
 }
 
 /*/////////////////////////////////////////////////////////////
 interfaz Laboratorio de cada software*/
 
 .contenido_soft{
-   height: 1500px;
+   height: 1580px;
+}
+
+/*/////////////////////////////////////////////////////////////
+interfaz Espesificaciones*/
+
+.contenido_pri_esp{
+   top:90px;
+}
+.contenido_pri_img{
+  height: 200px;
+}
+.contenido_pri_img img{
+  width: 240px;
+}
+
+.contenido_pri_section{
+  height: auto;
+}
+
+.contenido_pri_esp{
+   width: auto;
+   flex-direction: column;
+}
+.contenido_pri_caracteristicas{
+   width: auto;
+   height: 380px;
+}
+.contenido_pri_caracteristicas ul{
+   width: 300px;
+}
+
+.contenido_pri_caracteristicas li{
+   width: 280px;
+   height: 50px;
 }

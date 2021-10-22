@@ -11,9 +11,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Average&family=Krub:ital,wght@1,300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Average&family=Krub:ital,wght@1,200&display=swap" rel="stylesheet">
+    <script src="../Js/jquery.js"></script>
+    <script src="../Js/jquery.dataTables.min.js"></script>
+    <script src="../Js/scrollreveal.js"></script>
     <title>Consulta por software</title>
 </head>
-<body>
+<body class="body">
     <header class="headerOP">
         <nav class="headerOP_nav">
             <figure class="headerOP_logo">
@@ -27,58 +30,206 @@
     </header>
      <main class="contenido_pri">
          <section class="contenido_pri_section">
+             <div class="titulo_y_buscar">
                 <div class="div_subt">
                   <figure class="subt_figure">
                      <img class="subt_figure_img" src="../Imagenes/consulta.png">
                   </figure>   
                   <h1>Consulta por software</h1>
-               </div> 
-               <ul>
-                   <li><a href="../html/AutodeskCo.html">Autodesk collection 2020</a></li>
-                   <li><a href="../html/Arcgis.html">Arcgis 10.8.1</a></li>
-                   <li><a href="../html/Spss.html">Spss v27</a></li>
-                   <li><a href="../html/AdobeCC.html">Adobe CC 2021</a></li>
-                   <li><a href="../html/Ansys.html">Ansys 2021R1</a></li>
-                   <li><a href="../html/Mathematica.html">Wolfram Mathe. 12.1</a></li>
-                   <li><a href="../html/stata.html">Stata 16</a></li>
-                   <li><a href="../html/atlasti.html">Atlas ti v8</a></li>
-                   <li><a href="../html/R.html">R y R Studio</a></li>
-                   <li><a href="../html/solid.html">Solid Edge 2021</a></li>
-                   <li><a href="../html/googleE.html">Google Earth</a></li>
-                   <li><a href="../html/nx.html">Nx 12</a></li>
-                   <li><a href="../html/gis.html">Quantum GIS</a></li>
-                   <li><a href="../html/pseint.html">Pseint</a></li>
-                   <li><a href="../html/euler.html">Euler math toolbox</a></li>
-                   <li><a href="../html/civil.html">Civil 3D 2015</a></li>
-                   <li><a href="../html/LabSistemas104SD.html">Codec Blocks</a></li>
-                   <li><a href="../html/LabSistemas104SD.html">HEC-IHMS</a></li>
-                   <li><a href="../html/LabSistemas104SD.html">Vensim</a></li>
-                   <li><a href="../html/LabSistemas104SD.html">Python 3.5</a></li>
-                   <li><a href="../html/LabSistemas104SD.html">Project 2013</a></li>
-                   <li><a href="../html/LabSistemas104SD.html">Netbeans 8.2</a></li>
-                   <li><a href="../html/LabSistemas104SD.html">Cisco Packet Tracert</a></li>
-                   <li><a href="../html/LabSistemas104SD.html">Star uml</a></li>
-                   <li><a href="../html/LabSistemas104SD.html">Spad 9.0</a></li>
-                   <li><a href="../html/LabSistemas104SD.html">Geogebra</a></li>
-                   <li><a href="../html/LabSistemas104SD.html">Matlab R2020B</a></li>
-                   <li><a href="../html/LabSistemas104SD.html">Flexsim</a></li>
-                   <li><a href="../html/LabSistemas104SD.html">Eviews 12</a></li>
-                   <li><a href="../html/LabSistemas104SD.html">SimaPro</a></li>
-                   <li><a href="../html/LabSistemas104SD.html">Bizagi</a></li>
-                   <li><a href="../html/LabSistemas104SD.html">Netlogo</a></li>
-                   <li><a href="../html/LabSistemas104SD.html">Gams</a></li>
-                   <li><a href="../html/LabSistemas104SD.html">Inventor</a></li>
-                   <li><a href="../html/LabSistemas104SD.html">Winbugs</a></li>
-                   <li><a href="../html/LabSistemas104SD.html">XAMPP</a></li>
-                   <li><a href="../html/LabSistemas104SD.html">Stencyl</a></li>
-                   <li><a href="../html/LabSistemas104SD.html">Construct</a></li>
-                   <li><a href="../html/LabSistemas104SD.html">Helisa</a></li>
-                   <li><a href="../html/LabSistemas104SD.html">Pspp</a></li>
-                   <li><a href="../html/LabSistemas104SD.html">Notepad ++ </a></li>
-                   <li><a href="../html/LabSistemas104SD.html">Mysql</a></li>
+               </div>
+               <div class="div_buscar">
+                   <img class="img_lupa" src="../Imagenes/lupa.png" alt="lupa">
+                   <input class="buscar" type="search" placeholder="Buscar software..." id="inputBusqueda">
+               </div>
+               <div class="search" id="search">
+                   <table class="search_table" id="searchTable"> 
+                    <thead>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="../html/AutodeskCo.html">Autodesk collection 2020</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/Arcgis.html">Arcgis 10.8.1</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/Spss.html">Spss v27</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/AdobeCC.html">Adobe CC 2021</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/Ansys.html">Ansys 2021R1</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/Mathematica.html">Wolfram Mathe. 12.1</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/stata.html">Stata 16</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/atlasti.html">Atlas ti v8</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/R.html">R y R Studio</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/solid.html">Solid Edge 2021</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/googleE.html">Google Earth</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/nx.html">Nx 12</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/gis.html">Quantum GIS</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/pseint.html">Pseint</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/euler.html">Euler math toolbox</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/civil.html">Civil 3D 2015</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/CodeB.html">Codec Blocks</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/hec.html">HEC-IHMS</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/vensim.html">Vensim</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/python.html">Python 3.5</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/projetc.html">Project 2013</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/netbeans.html">Netbeans 8.2</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/ciscop.html">Cisco Packet Tracert</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/spad.html">Spad 9.0</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/geogebra.html">Geogebra</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/matlab.html">Matlab R2020B</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/flexsim.html">Flexsim</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/eviews.html">Eviews 12</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/simapro.html">SimaPro</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/bizagi.html">Bizagi</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/netlogo.html">Netlogo</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/gams.html">Gams</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/potatoes.html">Hot Potatoes</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/inventor.html">Inventor</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/winbugs.html">Winbugs</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/xampp.html">XAMPP</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/stencyL.html">Stencyl</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/construct.html">Construct</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/uml.html">UML</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/helisa.html">Helisa</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/pspp.html">Pspp</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/notepad.html">Notepad ++</a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="../html/mysql.html">Mysql</a></td>
+                        </tr>
+                    </tbody>
+                   </table>
+               </div>
+            </div>
+               <ul class="ul_software">
+                   <li class="salas"><a href="../html/AutodeskCo.html">Autodesk collection 2020</a></li>
+                   <li class="salas"><a href="../html/Arcgis.html">Arcgis 10.8.1</a></li>
+                   <li class="salas"><a href="../html/Spss.html">Spss v27</a></li>
+                   <li class="salas"><a href="../html/AdobeCC.html">Adobe CC 2021</a></li>
+                   <li class="salas"><a href="../html/Ansys.html">Ansys 2021R1</a></li>
+                   <li class="salas"><a href="../html/Mathematica.html">Wolfram Mathe. 12.1</a></li>
+                   <li class="salas"><a href="../html/stata.html">Stata 16</a></li>
+                   <li class="salas"><a href="../html/atlasti.html">Atlas ti v8</a></li>
+                   <li class="salas"><a href="../html/R.html">R y R Studio</a></li>
+                   <li class="salas"><a href="../html/solid.html">Solid Edge 2021</a></li>
+                   <li class="salas"><a href="../html/googleE.html">Google Earth</a></li>
+                   <li class="salas"><a href="../html/nx.html">Nx 12</a></li>
+                   <li class="salas"><a href="../html/gis.html">Quantum GIS</a></li>
+                   <li class="salas"><a href="../html/pseint.html">Pseint</a></li>
+                   <li class="salas"><a href="../html/euler.html">Euler math toolbox</a></li>
+                   <li class="salas"><a href="../html/civil.html">Civil 3D 2015</a></li>
+                   <li class="salas"><a href="../html/CodeB.html">Codec Blocks</a></li>
+                   <li class="salas"><a href="../html/hec.html">HEC-IHMS</a></li>
+                   <li class="salas"><a href="../html/vensim.html">Vensim</a></li>
+                   <li class="salas"><a href="../html/python.html">Python 3.5</a></li>
+                   <li class="salas"><a href="../html/projetc.html">Project 2013</a></li>
+                   <li class="salas"><a href="../html/netbeans.html">Netbeans 8.2</a></li>
+                   <li class="salas"><a href="../html/ciscop.html">Cisco Packet Tracert</a></li>
+                   <li class="salas"><a href="../html/spad.html">Spad 9.0</a></li>
+                   <li class="salas"><a href="../html/geogebra.html">Geogebra</a></li>
+                   <li class="salas"><a href="../html/matlab.html">Matlab R2020B</a></li>
+                   <li class="salas"><a href="../html/flexsim.html">Flexsim</a></li>
+                   <li class="salas"><a href="../html/eviews.html">Eviews 12</a></li>
+                   <li class="salas"><a href="../html/simapro.html">SimaPro</a></li>
+                   <li class="salas"><a href="../html/bizagi.html">Bizagi</a></li>
+                   <li class="salas"><a href="../html/netlogo.html">Netlogo</a></li>
+                   <li class="salas"><a href="../html/gams.html">Gams</a></li>
+                   <li class="salas"><a href="../html/potatoes.html">Hot Potatoes</a></li>
+                   <li class="salas"><a href="../html/inventor.html">Inventor</a></li>
+                   <li class="salas"><a href="../html/winbugs.html">Winbugs</a></li>
+                   <li class="salas"><a href="../html/xampp.html">XAMPP</a></li>
+                   <li class="salas"><a href="../html/stencyl.html">Stencyl</a></li>
+                   <li class="salas"><a href="../html/construct.html">Construct</a></li>
+                   <li class="salas"><a href="../html/uml.html">UML</a></li>
+                   <li class="salas"><a href="../html/helisa.html">Helisa</a></li>
+                   <li class="salas"><a href="../html/pspp.html">Pspp</a></li>
+                   <li class="salas"><a href="../html/notepad.html">Notepad ++ </a></li>
+                   <li class="salas"><a href="../html/mysql.html">Mysql</a></li>
                </ul>
             </section>
      </main>
-     
+<script src="../Js/Desbanecer.js"></script>    
+<script src="../Js/buscador.js"></script>
 </body>
 </html>
