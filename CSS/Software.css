@@ -24,6 +24,15 @@
     font-size: 30px;
 }
 
+.contenido_section_nom{
+    position: absolute;
+    top: 85px;
+    font-family: 'Average', serif;
+    font-size: 30px;
+    display: flex;
+    height: 50px;
+}
+
 .figure_img{
     width: 70px;
 }
@@ -31,6 +40,8 @@
 .contenido_section_div h1{
     padding-left: 20px;
 }
+
+
 
 .sede{
     font-size: 15px;
@@ -40,7 +51,7 @@
 .contenido_programas{
     position: absolute;
     display: flex;
-    top: 140px;
+    top: 160px;
     width: auto;
     height: auto;
     border: 1px solid black;  
@@ -57,6 +68,8 @@
 .contenido_programas div{
    text-align: center;
 }
+
+
 
 .contenido_programas_ul{
     list-style-type: none;

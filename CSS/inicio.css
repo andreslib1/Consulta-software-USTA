@@ -86,7 +86,7 @@ main{
     align-self: center;  
 }
 .contenido_bloque_s_nombre{
-    padding-top: 30px;
+    padding: 25px 0px;
 }
 .contenido_bloque_s_nombre:link{
     color:black;
