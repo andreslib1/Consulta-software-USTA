@@ -1,0 +1,29 @@
+[33mcommit c386e7a644108172fb64eefb8df081cdf2c460c6[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Andres Lopez <andreslib8@gmail.com>
+Date:   Thu Oct 21 20:27:19 2021 -0500
+
+    agregar proyecto final
+
+[33mcommit 56463bc8d64fb1974c88f15e96fb6cd056917954[m
+Author: Andres Lopez <andreslib8@gmail.com>
+Date:   Sun Sep 12 20:51:06 2021 -0500
+
+    se corrigue altura en sedes
+
+[33mcommit 00ce8e8f359591ab12ae0e9d646129a0cebd7bcb[m
+Author: Andres Lopez <andreslib8@gmail.com>
+Date:   Sun Sep 12 20:23:22 2021 -0500
+
+    se corrigue interfaz de inicio y demas
+
+[33mcommit ee4e8432afbe8e26d9c69eecd2dfd2ab485f6b79[m
+Author: Andres Lopez <andreslib8@gmail.com>
+Date:   Sat Sep 11 20:13:45 2021 -0500
+
+    se elimina carpeta software
+
+[33mcommit 3d3e8072a4df485d71f94bc8ae226785b140e1df[m
+Author: Andres Lopez <andreslib8@gmail.com>
+Date:   Sat Sep 11 19:40:41 2021 -0500
+
+    primer comit comprobando pagina consulta software
